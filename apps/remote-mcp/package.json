@@ -10,6 +10,8 @@
         "@types/node": "^26.6.5"
     },
     "dependencies": {
+        "@clerk/backend": "^3.26.3",
+        "@clerk/mcp-tools": "^0.7.0",
         "@modelcontextprotocol/client": "^2.4.0",
         "@modelcontextprotocol/server": "^2.4.0",
         "hono": "^4.13.14",
