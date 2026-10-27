@@ -1,14 +1,17 @@
 {
-  "name": "sendkit-mcp",
+  "name": "@lazarshock/sendkit-mcp",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "exports": {
     ".": "./src/index.ts"
   },
+  "scripts": {
+    "build": "tsdown"
+  },
   "dependencies": {
+    "@lazarshock/sendkit-core": "workspace:*",
     "@modelcontextprotocol/client": "^2.4.0",
-    "@modelcontextprotocol/server": "^2.4.0",
-    "sendkit-core": "workspace:*"
+    "@modelcontextprotocol/server": "^2.4.0"
   }
 }

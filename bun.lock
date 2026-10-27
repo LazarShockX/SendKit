@@ -18,35 +18,35 @@
       "dependencies": {
         "@clerk/backend": "^3.26.3",
         "@clerk/mcp-tools": "^0.7.0",
+        "@lazarshock/sendkit-core": "workspace:*",
         "@modelcontextprotocol/client": "^2.4.0",
         "@modelcontextprotocol/server": "^2.4.0",
         "hono": "^4.13.14",
-        "sendkit-core": "workspace:*",
       },
     },
     "packages/cli": {
-      "name": "sendkit",
+      "name": "@lazarshock/sendkit",
       "version": "0.0.0",
       "dependencies": {
+        "@lazarshock/sendkit-core": "workspace:*",
         "commander": "^15.0.0",
-        "sendkit-core": "workspace:*",
         "zod": "^4.6.7",
       },
     },
     "packages/core": {
-      "name": "sendkit-core",
+      "name": "@lazarshock/sendkit-core",
       "version": "0.0.0",
       "dependencies": {
         "zod": "^4.6.7",
       },
     },
     "packages/local-mcp": {
-      "name": "sendkit-mcp",
+      "name": "@lazarshock/sendkit-mcp",
       "version": "0.0.0",
       "dependencies": {
+        "@lazarshock/sendkit-core": "workspace:*",
         "@modelcontextprotocol/client": "^2.4.0",
         "@modelcontextprotocol/server": "^2.4.0",
-        "sendkit-core": "workspace:*",
       },
     },
   },
@@ -58,6 +58,12 @@
     "@clerk/shared": ["@clerk/shared@4.42.0", "", { "dependencies": { "@tanstack/query-core": "^5.101.4", "dequal": "2.0.3", "glob-to-regexp": "0.4.1", "js-cookie": "3.0.8" }, "peerDependencies": { "react": "^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0", "react-dom": "^18.0.0 || ~19.0.3 || ~19.1.4 || ~19.2.3 || ~19.3.0-0" }, "optionalPeers": ["react", "react-dom"] }, "sha512-IuTwYNEWtuI1zKfEcqbl41z/PToqNdfoFH33CM4XDYQ7G/DCT9vf/zSKECqldnuDknfzKJxCKT/Ku8o/Y/qnkQ=="],
 
     "@hono/node-server": ["@hono/node-server@2.1.5", "", { "peerDependencies": { "hono": "^4 || ^5.0.0-0" } }, "sha512-MgP/I06GdvsilDspMk/qmRzpk8LOUStP6jFAbSRi40W09DhoyUn+Mj7eyKICPqeYKybOjVFLVIAQzvu1bfIa7Q=="],
+
+    "@lazarshock/sendkit": ["@lazarshock/sendkit@workspace:packages/cli"],
+
+    "@lazarshock/sendkit-core": ["@lazarshock/sendkit-core@workspace:packages/core"],
+
+    "@lazarshock/sendkit-mcp": ["@lazarshock/sendkit-mcp@workspace:packages/local-mcp"],
 
     "@modelcontextprotocol/client": ["@modelcontextprotocol/client@2.4.0", "", { "dependencies": { "@modelcontextprotocol/core": "2.4.0", "cross-spawn": "^7.0.5", "eventsource": "^3.0.2", "eventsource-parser": "^3.0.8", "jose": "^6.1.3", "pkce-challenge": "^5.0.0", "zod": "^4.2.0" } }, "sha512-LgrD2OphHuG12vfKFKz6SOnq7bKHQmhGJIAYdD+MZBn2npHEyry6uD8zvktodtl5CQM85MO0anUyD9JwmUmxww=="],
 
@@ -436,12 +442,6 @@
     "safer-buffer": ["safer-buffer@2.1.2", "", {}, "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg=="],
 
     "send": ["send@1.2.1", "", { "dependencies": { "debug": "^4.4.3", "encodeurl": "^2.0.0", "escape-html": "^1.0.3", "etag": "^1.8.1", "fresh": "^2.0.0", "http-errors": "^2.0.1", "mime-types": "^3.0.2", "ms": "^2.1.3", "on-finished": "^2.4.1", "range-parser": "^1.2.1", "statuses": "^2.0.2" } }, "sha512-1gnZf7DFcoIcajTjTwjwuDjzuz4PPcY2StKPlsGAQ1+YH20IRVrBaXSWmdjowTJ6u8Rc01PoYOGHXfP1mYcZNQ=="],
-
-    "sendkit": ["sendkit@workspace:packages/cli"],
-
-    "sendkit-core": ["sendkit-core@workspace:packages/core"],
-
-    "sendkit-mcp": ["sendkit-mcp@workspace:packages/local-mcp"],
 
     "sendkit-remote-mcp": ["sendkit-remote-mcp@workspace:apps/remote-mcp"],
 
