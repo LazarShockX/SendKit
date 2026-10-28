@@ -1,0 +1,12 @@
+{
+    "mcpServers": {
+        "sendkit": {
+            "type": "stdio",
+            "command": "npx",
+            "args": ["-y", "@lazarshock/sendkit-mcp"],
+            "env": {
+                "TELEGRAM_BOT_TOKEN": "<YOUR_TELEGRAM_BOT_TOKEN>"
+            }
+        }
+    }
+}
