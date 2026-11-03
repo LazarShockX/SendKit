@@ -4,6 +4,10 @@ SendKit is a TypeScript toolkit for sending Telegram messages from developer too
 
 The CLI stores a bot token in a local configuration file for manual use. The local MCP server reads its token from the process environment, while the remote MCP service authenticates MCP requests with Clerk and receives a bot token as part of the service route.
 
+<p align="center">
+  <img width="1299" height="466" alt="Screenshot 2026-11-03 at 13 02 15" src="https://github.com/user-attachments/assets/beace14e-486a-43f5-af0b-605ec4e1b3ab" />
+</p>
+
 ## ✨ Features
 
 ### Telegram Messaging
